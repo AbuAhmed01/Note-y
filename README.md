@@ -1,6 +1,6 @@
-# Note-y
+# ReallyNoted
 
-Note-y is a local-first notes and lecture workspace. Documents are stored in the
+ReallyNoted is a local-first notes and lecture workspace. Documents are stored in the
 browser's local storage and the UI contains no seeded personal or lecture data.
 
 ## Run locally
@@ -15,7 +15,7 @@ with any static web server. This is suitable for self-hosting on a Linux
 machine. The app can connect to an installed local model through an
 OpenAI-compatible endpoint such as Ollama or LM Studio:
 
-1. Open **Settings** in Note-y.
+1. Open **Settings** in ReallyNoted.
 2. Set the endpoint (Ollama defaults to `http://localhost:11434/v1/chat/completions`).
 3. Set the model name, for example `llama3.2`.
 
@@ -33,7 +33,7 @@ uvicorn server:app --host 127.0.0.1 --port 8000
 ```
 
 The first start downloads the selected Whisper model. Set `WHISPER_MODEL=base`
-for a faster CPU model or `WHISPER_MODEL=medium` for better accuracy. In Note-y
+for a faster CPU model or `WHISPER_MODEL=medium` for better accuracy. In ReallyNoted
 Settings, use `http://localhost:8000/transcribe` as the transcription endpoint.
 The service returns timestamped segments. Speaker diarization is intentionally
 kept separate: use WhisperX or another diarization-capable service with the

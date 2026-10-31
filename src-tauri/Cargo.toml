@@ -1,8 +1,8 @@
 [package]
-name = "note-y"
+name = "reallynoted"
 version = "0.1.0"
 description = "Local-first notes and transcription workspace"
-authors = ["Note-y contributors"]
+authors = ["ReallyNoted contributors"]
 edition = "2021"
 
 [lib]

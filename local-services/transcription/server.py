@@ -10,7 +10,7 @@ MODEL_NAME = os.getenv("WHISPER_MODEL", "small")
 DEVICE = os.getenv("WHISPER_DEVICE", "cpu")
 COMPUTE_TYPE = os.getenv("WHISPER_COMPUTE_TYPE", "int8")
 
-app = FastAPI(title="Note-y local transcription")
+app = FastAPI(title="ReallyNoted local transcription")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "http://localhost:1420", "tauri://localhost"],
